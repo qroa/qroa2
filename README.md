@@ -6,6 +6,16 @@ This Script is the official implementation of the article "*QROA: A Black-Box Qu
 
 Paper: https://arxiv.org/abs/2406.02044
 
+## Citation
+```
+@article{jawad2024qroa,
+  title={QROA: A Black-Box Query-Response Optimization Attack on LLMs},
+  author={Jawad, Hussein and BRUNEL, Nicolas J-B},
+  journal={arXiv preprint arXiv:2406.02044},
+  year={2024}
+}
+```
+
 ## Abstract
 
 Large Language Models (LLMs) have recently gained popularity, but they also raise concerns due to their potential to create harmful content if misused. This study in- troduces the Query-Response Optimization Attack (QROA), an optimization-based strategy designed to exploit LLMs through a black-box, query-only interaction. QROA adds an optimized trigger to a malicious instruction to compel the LLM to generate harmful content. Unlike previous approaches, QROA does not require access to the model’s logit information or any other internal data and operates solely through the standard query-response interface of LLMs. Inspired by deep Q-learning and Greedy coordinate descent, the method iteratively updates tokens to maximize a designed reward function. We tested our method on various LLMs such as Vicuna, Falcon, and Mistral, achieving an Attack Success Rate (ASR) over 80%. We also tested the model against Llama2-chat, the fine-tuned version of Llama2 designed to resist Jailbreak attacks, achieving good ASR with a suboptimal initial trigger seed. This study demonstrates the feasibility of generating jailbreak attacks against deployed LLMs in the public domain using black-box optimization methods, enabling more comprehensive safety testing of LLMs
