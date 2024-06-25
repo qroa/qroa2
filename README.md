@@ -50,7 +50,7 @@ Run the script from the command line by specifying the path to the instruction f
 python main.py data/instructions.csv [API_AUTH_TOKEN]
 ```
 
-Replace `instructions.csv` with the path to your text file containing the instructions, and `HUGGING_FACE_AUTH_TOKEN` with the actual authentication token.
+Replace `instructions.csv` with the path to your text file containing the instructions, and `API_AUTH_TOKEN` with the actual authentication token.
 
 ### Demo and Testing Model Generation
 - **Notebook Demo:** Run `demo.ipynb` to see a demonstration of the process.
@@ -60,7 +60,7 @@ Replace `instructions.csv` with the path to your text file containing the instru
 This script can be run from the command line as follows:
 
 ```bash
-python generate.py -auth_token [API_AUTH_TOKEN] -instruction ["Your instruction here"] -suffix ["your suffix here"]
+python generate.py -auth_token [API_AUTH_TOKEN] -instruction [THE INSTRUCTION HERE] -suffix [THE SUFFIX HERE]
 ```
 
 Where: 
